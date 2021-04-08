@@ -18,7 +18,6 @@ function getCommonCharacterCount(s1, s2) {
     if (str.indexOf(arr[i]) >= 0) {
       sum += 1;
       str = str.replace(arr[i], '');
-      console.log(str);
     }
   }
   return sum;

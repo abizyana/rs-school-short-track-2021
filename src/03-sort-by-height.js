@@ -13,9 +13,7 @@
 function sortByHeight(arr) {
   const newArr = [];
   const map = arr.map((el, i) => (el === -1 ? i : -1)).filter((el) => el >= 0);
-  console.log(map);
   const arrayFiltered = arr.filter((el) => el !== -1).sort((a, b) => a - b);
-  console.log(arrayFiltered);
   let j = 0;
   let k = 0;
   for (let i = 0; i < arr.length; i++) {
