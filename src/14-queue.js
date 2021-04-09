@@ -26,11 +26,6 @@ class Queue {
       this.list.next = acc;
       this.siz++;
     }
-
-    if (this.list) {
-      console.log(this.list);
-      console.log(`size: ${this.siz}`);
-    }
   }
 
   dequeue() {
@@ -48,12 +43,6 @@ class Queue {
 
     temp.next = null;
     this.siz--;
-
-    console.log(`deque: value: ${el}`);
-
-    if (this.list) {
-      console.log(this.list);
-    }
 
     return el;
   }
